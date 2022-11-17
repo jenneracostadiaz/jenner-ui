@@ -1,4 +1,3 @@
-<?php get_sidebar(); ?>
 <?php
 get_header();
 
@@ -12,7 +11,5 @@ else :
     get_template_part( 'template-parts/page', 'error' );
 endif;
 
-get_sidebar();
 get_footer();
 ?>
-<?php get_footer(); ?>
