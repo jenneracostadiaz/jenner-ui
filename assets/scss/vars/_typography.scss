@@ -53,6 +53,71 @@ $ffBody: 'Satoshi', sans-serif;
     line-height: 24px;
 }
 
-h1{
-    @include H6-SemiBold20();
+/*** Body ***/
+@mixin Body-Regular17 {
+    font-family: $ffBody;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+}
+@mixin Body-Medium14 {
+    font-family: $ffBody;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+@mixin Body-Bold13 {
+    font-family: $ffBody;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+}
+@mixin Body-Medium13 {
+    font-family: $ffBody;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 24px;
+}
+@mixin Body-Regular13 {
+    font-family: $ffBody;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+}
+@mixin Caption-Medium12 {
+    font-family: $ffBody;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+@mixin Caption-Medium11 {
+    font-family: $ffBody;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+}
+@mixin CHIP-Bold10 {
+    font-family: $ffBody;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+@mixin Tab-SemiBold14 {
+    font-family: $ffBody;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+@mixin Title-SemiBold16 {
+    font-family: $ffBody;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin Title-SemiBold14 {
+    font-family: $ffBody;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
 }
