@@ -18,3 +18,17 @@ $cActive: #E8E8E9;
 $cDeactive: #30383B;
 $cLightMode: #003249;
 $cDarkMode: #001524;
+
+/*** ColorFul ***/
+$cCF01: #2E8CFF;
+$cCF02: #FF2E8C;
+$cCF03: #2EFFA1;
+$cCF04: #A12EFF;
+$cCF05: #FFD52E;
+$cCF06: #FF9FA8;
+$cCF07: #FF9F7B;
+
+/*** Gradiets ***/
+$gR01: radial-gradient($cCF06, $cCF04, $cCF01, $cCF03);
+$gL02: linear-gradient(90deg, $cCF02, $cCF04);
+$gL03: linear-gradient($cSecondary, $cThird);
