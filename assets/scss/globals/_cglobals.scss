@@ -47,3 +47,20 @@ h5 {
 h6 {
 	@include H6-SemiBold20;
 }
+
+img,
+svg {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+button,
+input[type='submit'] {
+	border: 0;
+	padding: 0;
+	background-color: transparent;
+	&:hover {
+		cursor: pointer;
+	}
+}
