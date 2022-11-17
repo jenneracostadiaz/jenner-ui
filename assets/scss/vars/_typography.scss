@@ -1,2 +1,58 @@
 $ffTitle: 'Chillax', sans-serif;
 $ffBody: 'Satoshi', sans-serif;
+
+/*** Titles ***/
+@mixin title-L-SB18 {
+    font-family: $ffTitle;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/*** HeadLines ***/
+@mixin H0-SemiBold60 {
+    font-family: $ffTitle;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 60px;
+}
+@mixin H1-SemiBold48 {
+    font-family: $ffTitle;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 56px;
+}
+@mixin H2-SemiBold40 {
+    font-family: $ffTitle;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+}
+@mixin H3-SemiBold36 {
+    font-family: $ffTitle;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+}
+@mixin H4-SemiBold32 {
+    font-family: $ffTitle;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+@mixin H5-SemiBold24 {
+    font-family: $ffTitle;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+}
+@mixin H6-SemiBold20 {
+    font-family: $ffTitle;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+h1{
+    @include H6-SemiBold20();
+}
