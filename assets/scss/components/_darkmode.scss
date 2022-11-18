@@ -7,16 +7,21 @@
 }
 
 @mixin swith-darkmode($color, $active: false) {
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		max-width: 0;
+		height: 0.25rem;
+		background-color: $color;
+		transition: all 0.5s;
+	}
 	@if $active {
-		position: relative;
 		&::after {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 2rem;
-			height: 0.25rem;
-			background-color: $color;
+			max-width: 2rem;
 		}
 	}
 }
@@ -51,6 +56,7 @@
 	}
 	&__dark {
 		color: $cBackgroun02;
+		@include swith-darkmode($cWhite, $active: false);
 		@include darkmode() {
 			color: $cWhite;
 			@include swith-darkmode($cWhite, $active: true);
