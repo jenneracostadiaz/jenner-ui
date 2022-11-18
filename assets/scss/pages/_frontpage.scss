@@ -1,0 +1,35 @@
+@import '../vars/colors';
+
+.home-page {
+	padding: 4rem 0;
+}
+.cover {
+	margin: 4rem 0;
+	&__image {
+		position: relative;
+		&::after {
+			z-index: 0;
+			content: '';
+			position: absolute;
+			right: -10rem;
+			bottom: -20rem;
+			display: block;
+			width: 48rem;
+			height: 48rem;
+			background: $gR01;
+			border-radius: 100%;
+			mix-blend-mode: hard-light;
+			opacity: 0.5;
+			filter: blur(150px);
+			@include darkmode() {
+				mix-blend-mode: overlay;
+				opacity: 0.85;
+			}
+		}
+		img {
+			margin: auto;
+			position: relative;
+			z-index: 1;
+		}
+	}
+}
