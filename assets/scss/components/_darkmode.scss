@@ -40,6 +40,7 @@
 }
 
 .txt-switch {
+	margin: 0;
 	&__light {
 		color: $cBackgroun03;
 		@include swith-darkmode($cBackgroun03, $active: true);
