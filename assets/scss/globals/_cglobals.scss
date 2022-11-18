@@ -1,3 +1,5 @@
+@import '../components/darkmode';
+
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; /* Now 10px = 1rem! */
@@ -16,8 +18,21 @@ html {
 
 body {
 	@include Body-Regular17();
-	background-color: $cBackgroun03;
-	color: $cWhite;
+	transition: all 0.5s;
+	background-color: $cWhite;
+	color: $cBackgroun03;
+	@include darkmode() {
+		background-color: $cBackgroun03;
+		color: $cWhite;
+	}
+	// @include darkmode() {
+	// 	background-color: $cBackgroun03;
+	// 	color: $cWhite;
+	// }
+	// @include darkmode() {
+	// 	background-color: $cBackgroun03;
+	// 	color: $cWhite;
+	// }
 }
 
 a {
@@ -63,4 +78,9 @@ input[type='submit'] {
 	&:hover {
 		cursor: pointer;
 	}
+}
+
+.svg-icon {
+	width: 1.6rem;
+	height: 1.6rem;
 }

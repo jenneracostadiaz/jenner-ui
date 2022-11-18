@@ -26,7 +26,8 @@ if ( ! function_exists( 'jennerui_setup' ) ) :
         wp_enqueue_style('mainCSS', get_template_directory_uri() . '/assets/css/main.min.css', array(), wp_get_theme()->get('Version'));
         wp_enqueue_style('style', get_stylesheet_uri(), array('mainCSS'), wp_get_theme()->get('Version') );
         /** JS */
-        wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/app.js', array('jquery'), wp_get_theme()->get('Version'), true);
+        wp_enqueue_script('darkmode', get_template_directory_uri() . '/assets/js/components/darkmode.js', array('jquery'), wp_get_theme()->get('Version'), true);
+        wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/app.js', array('darkmode'), wp_get_theme()->get('Version'), true);
 
         /**
          * Brand Support Logo 

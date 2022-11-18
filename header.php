@@ -15,7 +15,12 @@
           echo '<div class="main-header__brand">';
             the_custom_logo();
           echo '</div>';
+          
         }
       ?>
+      <button onclick="themeMode()" class="btn-theme-mode">
+        <svg class="svg-icon btn-theme-mode__svg"><use href="<?php echo get_template_directory_uri( ) ?>/assets/icons/symbols.svg#sun" /></svg>
+        <div class="btn-theme-mode__txt-switch txt-switch">Modo <span class="txt-switch__light">Claro</span> / <span class="txt-switch__dark">Oscuro</span></div>
+      </button>
     </div>
   </header>
