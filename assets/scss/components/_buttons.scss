@@ -1,0 +1,42 @@
+@mixin btn-base {
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: $ePopup;
+	padding: 1.2rem 3.2rem;
+	border-radius: 2.4rem;
+	margin: auto;
+}
+
+@mixin btn-primary($bg, $color) {
+	@include btn-base();
+	background-color: $bg;
+	color: $color;
+	svg {
+		fill: $color;
+		margin-right: 1rem;
+	}
+}
+
+@mixin btn-secondary($border, $color) {
+	@include btn-base();
+	background-color: transparent;
+	border: 0.2rem solid $border;
+	color: $color;
+	svg {
+		fill: $color;
+		margin-right: 1rem;
+	}
+}
+
+.btn-primary {
+	@include btn-primary($cPrimary, $cWhite);
+}
+
+.btn-secondary {
+	@include btn-secondary($cPrimary, $cBackgroun03);
+	@include darkmode() {
+		@include btn-secondary($cPrimary, $cWhite);
+	}
+}
