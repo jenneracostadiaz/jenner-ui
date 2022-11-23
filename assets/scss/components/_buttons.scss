@@ -17,6 +17,19 @@
 		fill: $color;
 		margin-right: 1rem;
 	}
+	&:hover {
+		@if ($bg == $cPrimary) {
+			background-color: $cPrimary_hover;
+			color: $cWhite;
+		}
+	}
+	&:focus {
+		@if ($bg == $cPrimary) {
+			background-color: $cPrimary_focus;
+			color: $color;
+			outline: 0.35rem solid rgba($cPrimary, 0.25);
+		}
+	}
 }
 
 @mixin btn-secondary($border, $color) {
@@ -27,6 +40,18 @@
 	svg {
 		fill: $color;
 		margin-right: 1rem;
+	}
+	&:hover {
+		@if ($border == $cPrimary) {
+			background-color: rgba($cPrimary, 0.05);
+			color: $color;
+		}
+	}
+	&:focus {
+		@if ($border == $cPrimary) {
+			background-color: rgba($cPrimary, 0.005);
+			outline: 0.35rem solid rgba($cPrimary, 0.25);
+		}
 	}
 }
 
