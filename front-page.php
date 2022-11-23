@@ -23,8 +23,8 @@
             <div class="cover__txt__blockquote">
                 <blockquote class="jenners-philosophy">
                     <img src="http://jennerui.local/wp-content/uploads/2022/11/PhotoJenner-1080-150x150.png" alt="Jenner Acosta Diaz" class="jenners-philosophy__img">
-                    <p class="jenners-philosophy__img__cite">“Queremos mejorar las herramientas que usan los emprendedores para ofrecerles un ecosistema que ayude en su empresa”</p>
-                    <a href="#" class="btn-primary">
+                    <p class="jenners-philosophy__cite">“Queremos mejorar las herramientas que usan los emprendedores para ofrecerles un ecosistema que ayude en su empresa”</p>
+                    <a href="#" class="jenners-philosophy__btn btn-primary">
                         <svg class="svg-icon"><use href="<?php echo get_template_directory_uri( ) ?>/assets/icons/symbols.svg#philosophy" /></svg>
                         Mi Filosofía
                     </a>
