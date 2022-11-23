@@ -15,7 +15,7 @@
                     <svg class="svg-icon"><use href="<?php echo get_template_directory_uri( ) ?>/assets/icons/symbols.svg#newspaper" /></svg>
                     Leer nuestro Blog
                 </a>
-                <a href="#" class="btn-secondary">
+                <a href="https://wa.me/message/FVIV67T74WYXJ1" target="_blank" class="btn-secondary">
                     <svg class="svg-icon"><use href="<?php echo get_template_directory_uri( ) ?>/assets/icons/symbols.svg#whatsapp" /></svg>
                     ¡Convercemos!
                 </a>
