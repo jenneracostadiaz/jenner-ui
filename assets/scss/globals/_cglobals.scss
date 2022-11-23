@@ -5,6 +5,12 @@ html {
 	font-size: 62.5%; /* Now 10px = 1rem! */
 }
 
+html,
+body {
+	overflow-x: hidden;
+	width: 100%;
+}
+
 *,
 *:before,
 *:after {
@@ -21,7 +27,6 @@ body {
 	transition: all 0.5s;
 	background-color: $cWhite;
 	color: $cBackgroun03;
-	overflow-x: hidden;
 	@include darkmode() {
 		background-color: $cBackgroun03;
 		color: $cWhite;
