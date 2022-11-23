@@ -26,14 +26,10 @@ body {
 		background-color: $cBackgroun03;
 		color: $cWhite;
 	}
-	// @include darkmode() {
-	// 	background-color: $cBackgroun03;
-	// 	color: $cWhite;
-	// }
-	// @include darkmode() {
-	// 	background-color: $cBackgroun03;
-	// 	color: $cWhite;
-	// }
+	&.wp-admin {
+		background-color: $cWhite !important;
+		color: $cBackgroun03 !important;
+	}
 }
 
 a {
